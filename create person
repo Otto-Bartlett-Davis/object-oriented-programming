@@ -1,0 +1,36 @@
+#how to make a class
+
+class student:
+    #proprties / attributes
+    name = ""
+    age = 12
+    schoolclass = "6th A"
+    house = "Saffire"
+    classteacher = "Sayani"
+
+    #constructor
+    def __init__(self):
+        print("making a student")
+
+    #Another function
+    def change_details(self):
+        print("please enter your age")
+        self.age = int(input())
+        print("please enter the name of the student")
+        self.name = input()
+
+    #another function
+    def show_details(self):
+        print("The details of the student are:")
+        print(self.name)
+        print(self.age)
+        print(self.schoolclass)
+        print(self.house)
+        print(self.classteacher)
+
+
+#student class definition
+#making 2 object/intances of student class
+Otto = student()
+Sayani = student()
+
